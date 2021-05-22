@@ -15,8 +15,8 @@
                         @endif
 
                         {{ __('You are logged in!') }}
-                        <token-form-component></token-form-component>
-                        <starred-list-component></starred-list-component>
+                        <token-form-component user_github_token="{{$token ?? ''}}"></token-form-component>
+                        <starred-list-component user_github_token="{{$token ?? ''}}"></starred-list-component>
                     </div>
                 </div>
             </div>
